@@ -1,4 +1,4 @@
-from project_functions.banking_func import *
+from banking_func import *
 def main():
     isrunning =True
     while isrunning :

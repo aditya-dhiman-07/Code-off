@@ -1,4 +1,4 @@
-from project_functions.slot_func import *
+from slot_func import *
 
 def main():
     print("***************************")
