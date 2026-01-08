@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "compile",
+          "type": "shell",
+          "command": "g++",
+          "args": [
+              "-std=c++17",
+              "-o",
+              "${fileBasenameNoExtension}",
+              "${file}"
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": false
+          }
+      },
+      {
+          "label": "compile and run",
+          "type": "shell",
+          "command": "powershell",
+          "args": [
+              "-Command",
+              "g++ -std=c++17 -o '${fileBasenameNoExtension}' '${file}'; Get-Content input.txt | ./demo.exe | Out-File output.txt; Get-Content output.txt"
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "presentation": {
+              "echo": true,
+              "reveal": "always",
+              "focus": true,
+              "panel": "shared"
+          }
+      }
+  ]
+}
