@@ -1,11 +1,9 @@
-#include <iostream>
-using namespace std;
+#include <bits/stdc++.h>
 
 int main() {
-    int number;
     
-    cin >> number;
-    cout << "The number you entered is: " << number << endl;
-    
+    std::string s1;
+    std::getline(std::cin,s1);
+    std :: cout << s1;
     return 0;
 }
