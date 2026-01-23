@@ -3,12 +3,13 @@ using namespace std;
 
 void print1(int n);
 void print2(int n);
+void print3(int n);
 
 int main(){
     int n ;
     cout << "Enter the value of n : ";
     cin >> n;
-    print2(n);
+    print3(n);
     return 0;
 }
 
@@ -34,4 +35,14 @@ void print2(int n){
         }
         cout<<endl;
     }
+}
+void print3(int n){
+    for (int i = 0;i<n; i++){
+        for(int j = n-i;j<=n;j++){
+            char ch = 'A';
+            ch = ch+j-1;
+            cout<<ch<<" ";
+        }
+    cout<<endl;
+}
 }
