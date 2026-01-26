@@ -5,17 +5,17 @@ void perm(vector<int>& a) {
     int n = a.size();
 
     for (int i = 0; i < n; i++) {
-        int max = a[i], pos = i;
+        int max = a[i], posi = i;
 
         for (int j = i; j < n; j++) {
             if (a[j] > max) {
                 max = a[j];
-                pos = j;
+                posi = j;
             }
         }
 
         if (max > a[i]) {
-            reverse(a.begin() + i, a.begin() + pos + 1);
+            reverse(a.begin() + i, a.begin() + posi + 1);
             return;
         }
     }
