@@ -6,9 +6,9 @@ int main() {
     string s ;
     cin>>s;
 
-    int hash[256] = {0};
+    map<char,int>mpp;
     for (int i = 0; i<s.size();i++){
-        hash[s[i]-'a']++;
+        mpp[s[i]]++;
     }
 
     int q;
@@ -18,7 +18,7 @@ int main() {
         char ch;
         cout<< "ENTER QUERY : ";
         cin >> ch;
-        cout<< hash[ch]<<endl;
+        cout<< mpp[ch] <<endl;
     }
 
     return 0;
