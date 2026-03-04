@@ -6,21 +6,7 @@ void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
-}
 
-// Selection sort function
-void selectionSort(int array[], int size) {
-    for (int step = 0; step < size - 1; step++) {
-        int min_idx = step;
-        // Find the minimum element in the unsorted part
-        for (int i = step + 1; i < size; i++) {
-            if (array[i] < array[min_idx])
-                min_idx = i;
-        }
-        // Swap the found minimum element with the first element
-        swap(&array[min_idx], &array[step]);
-    }
-}
 
 // Function to print the array
 void printArray(int array[], int size) {
