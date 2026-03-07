@@ -6,7 +6,7 @@ void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
-
+    int k = 56;
 
 // Function to print the array
 void printArray(int array[], int size) {
