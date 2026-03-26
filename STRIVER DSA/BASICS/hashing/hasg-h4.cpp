@@ -7,9 +7,7 @@ int main() {
     cin>>s;
 
     map<char,int>mpp;
-    for (int i = 0; i<s.size();i++){
-        mpp[s[i]]++;
-    }
+ō
 
     int q;
     cout<<"Enter number of queries:";
